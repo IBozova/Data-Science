@@ -5,7 +5,7 @@ The starting one, called Math for Devs, is matematically orientated course in wh
 • Linear Algebra\
 • Probability and combinatorics\
 • Statistics\
-• Hypothesys Testing\
+• Hypothesis Testing\
 \
 The second course is Data Science which is more statistically oriented and encompases topics like:\
 • Data Manipulation\
