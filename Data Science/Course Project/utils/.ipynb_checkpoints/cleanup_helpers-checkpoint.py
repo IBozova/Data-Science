@@ -96,3 +96,11 @@ def add_fuzzy_matches_key_column(df, fuzzy_dict_ref, column_key):
             df.loc[df['Country'] == value, column_key] = key
     
     return df
+
+def merge_dfs(df1, df2):
+    
+    diffs_cols = df1.columns.difference(df2.columns)
+    only_diff_in_subsets = df1[diffs_cols]
+    merged_diff_df = pd.merge(df2, only_diff_in_subsets, left_index=True, right_index=True, how='inner')
+    
+    return merged_diff_df
